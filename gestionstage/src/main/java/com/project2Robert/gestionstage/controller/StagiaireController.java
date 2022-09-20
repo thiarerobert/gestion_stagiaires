@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.*;
 @AllArgsConstructor
 @CrossOrigin
 public class StagiaireController {
+    //Création d'un objet de type StagiaireService
     private final StagiaireService stagiaireService;
 
+    //Envoie des données saisies par requête http POST dans la route /create
     @PostMapping("/create")
     public Stagiaire create (@RequestBody Stagiaire stagiaire) {
         return stagiaireService.creer(stagiaire);

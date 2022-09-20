@@ -10,8 +10,10 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class StagiaireServiceImpl implements StagiaireService{
+    //Déclaration d'un objet de type StagiaireRepository
     private final StagiaireRepository stagiaireRepository;
 
+    //Sauvegarde de l'objet créé dans la base de données
     @Override
     public Stagiaire creer(Stagiaire stagiaire) {
         return stagiaireRepository.save(stagiaire);
