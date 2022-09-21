@@ -5,6 +5,8 @@ import com.project2Robert.gestionstage.service.StagiaireService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/stagiaire")
 @AllArgsConstructor
@@ -17,5 +19,10 @@ public class StagiaireController {
     @PostMapping("/create")
     public Stagiaire create (@RequestBody Stagiaire stagiaire) {
         return stagiaireService.creer(stagiaire);
+    }
+
+    @GetMapping("/read")
+    public List <Stagiaire> read(){
+        return stagiaireService.lire();
     }
 }

@@ -18,4 +18,9 @@ public class StagiaireServiceImpl implements StagiaireService{
     public Stagiaire creer(Stagiaire stagiaire) {
         return stagiaireRepository.save(stagiaire);
     }
+
+    @Override
+    public List<Stagiaire> lire() {
+        return stagiaireRepository.findAll();
+    }
 }

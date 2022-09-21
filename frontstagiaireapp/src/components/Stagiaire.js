@@ -5,6 +5,7 @@ import { Container } from '@mui/system';
 import { Paper } from '@mui/material';
 import Button from '@mui/material/Button';
 import './stagiaire.css';
+import { NavLink } from 'react-router-dom';
 
 export default function Stagiaire() {
 
@@ -43,9 +44,13 @@ export default function Stagiaire() {
         <TextField id="filled-basic" label="Adresse" variant="filled" value={adresse} onChange={(e)=>setAdresse(e.target.value)}/>
 
         </Box>
-
-        <Button variant="contained" onClick={handleClick}>Ajouter</Button>
-
+        <div className='click'>
+            <Button variant="contained" onClick={handleClick} style= {{width: '10rem', margin: 'auto'}} >Ajouter</Button>
+            
+            <NavLink to='/listestagiaire'>
+                AfficherLaListe
+            </NavLink>
+        </div>
         </Paper>
     </Container>
   );
