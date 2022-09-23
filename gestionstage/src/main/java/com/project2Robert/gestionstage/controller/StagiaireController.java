@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/stagiaire")
 @AllArgsConstructor
-@CrossOrigin
+@CrossOrigin(origins = "*")
 public class StagiaireController {
     //Création d'un objet de type StagiaireService
     private final StagiaireService stagiaireService;

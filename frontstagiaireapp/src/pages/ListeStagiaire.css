@@ -1,0 +1,28 @@
+.listestagiaire {
+    width: 40%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.entete{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.entete span {
+    padding: .5rem;
+}
+
+
+.paper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paper span {
+    padding: .5rem;
+}
