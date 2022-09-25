@@ -1,0 +1,57 @@
+.programme {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+}
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px ridge;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1), 0 8px 16px rgba(0,0,0,.1);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1rem;
+    margin-bottom: 5rem;
+}
+
+.input span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.input input {
+    width: 15rem;
+    height: 2rem;
+    border: 2px solid #4A90E2;
+    border-radius: 10px;
+}
+.btnProgramme {
+    width: 15rem;
+    height: 3rem;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #4A90E2;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.btnProgramme:hover {
+    border: 1px solid #4A90E2;
+    color: #4A90E2;
+    background-color: white;
+}
+

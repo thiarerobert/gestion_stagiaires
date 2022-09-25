@@ -17,13 +17,13 @@ export default function Stagiaire() {
     const handleClick=(e) => {
         e.preventDefault()
         const stagiaire= {nom_stagiaire, prenom_stagiaire, adresse}
-        console.log(stagiaire);
         fetch("http://localhost:8090/stagiaire/create", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(stagiaire)
         }).then(() =>{
-            console.log("Le stagiaire a été ajouté avec succès");
+            alert("Le stagiaire a été ajouté avec succès");
+            window.location.reload('/stagiaire');
         })
     }
 
