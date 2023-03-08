@@ -11,7 +11,7 @@ export default function AlignItemsList() {
 
     useEffect(() => {
     
-        fetch("http://localhost:8090/programme/read")
+        fetch("http://localhost:8080/programme/read")
         .then(res => res.json())
         .then((resultat) => {
             setListProgramme(resultat);
@@ -23,7 +23,7 @@ export default function AlignItemsList() {
         e.preventDefault()
         const id = {numeroProgramme};
     
-        fetch("http://localhost:8090/programme/delete/{numeroProgramme}", {
+        fetch("http://localhost:8080/programme/delete/{numeroProgramme}", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(id)

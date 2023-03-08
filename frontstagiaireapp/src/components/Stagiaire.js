@@ -17,7 +17,7 @@ export default function Stagiaire() {
     const handleClick=(e) => {
         e.preventDefault()
         const stagiaire= {nom_stagiaire, prenom_stagiaire, adresse}
-        fetch("http://localhost:8090/stagiaire/create", {
+        fetch("http://localhost:8080/stagiaire/create", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(stagiaire)

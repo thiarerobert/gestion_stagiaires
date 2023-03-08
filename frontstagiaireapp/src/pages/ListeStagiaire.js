@@ -9,7 +9,7 @@ export default function AlignItemsList() {
 
     useEffect(() => {
     
-        fetch("http://localhost:8090/stagiaire/read")
+        fetch("http://localhost:8080/stagiaire/read")
         .then(res => res.json())
         .then((resultat) => {
             setListeStagiaire(resultat);
